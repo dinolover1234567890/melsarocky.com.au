@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+	
+<title>M.E.L.S.A Rockhampton INC</title> <!--page title-->
+	
+	
+<link  rel="stylesheet" href="style.css" type="text/css"> <!--CCS sytle sheet reference-->
+<style>
+	body {
+		background-color: #2D2D2D /* background colour for webpage if soming is not allready there */
+	}	
+	</style>
+	</head>
+	<div id="container"> <!--webpage size limits-->
+	
+		<body onLoad="slider()"> <!--to make the top banner image rolate-->
+			<div class="slider">  <!--to make the top banner image rolate-->
+			 <img src="images/background4.jpg" alt="tram" id="slideImg"> <!--to make the top banner image rolate-->
+			 <div id="sidebar"> <!--this is the sidebar with some information that is useful for the user to know this includes Price,location,time,when,and a note-->
+			   <h3>Public Running Days:</h3>
+			   <p>First sunday of every month</p>
+			   <h3>Time:</h3>
+			   <p>From 9:00am to 12:00pm</p>
+			   <h3>Where:</h3>
+			   <p>You can find us in Leichardt Park on the corner of Campbelle and Cambridge Street in Rockhampton</p>
+			   <h3>Cost:</h3>
+			   <p>$2 for three laps or $10 for unlimited rides</p>
+				<h3> Note:</h3>
+			   <p>Fully enclosed footwear must be worn to ride the trains</p>
+		      </div>
+			
+			<div id="content3"> <!--this is the information about the club like the number of members that they have, how many steam trains they have how many desiel trains they 
+			have and the number of eletric train that they have-->
+				<h1> Who are we</h1>
+				<p> We are a small club that meets on the first Sunday of every month providing the weather is good, We run mini trains for the public to ride.
+				We currently have 10 steam trains, 4 Desiel and 3 Electric apart of our club. Most of these Train can be regulary seen at our monthly runday.
+				Our club currendly consests of about 20 members with more joining us occasionally.</p> <!--This-->
+				<h1>Private Bookings</h1>
+				<p> We also do provide a private booking opion if you would like to make a booking feel free to contact our presented Ian you can find his number in our contacts page of make a privite bookings can also be made thought our bookings tab more information can also be found there to.</p>
+				</div>
+			
+			</div>
+<div class="navbar"> <!--navagation button in top right corner-->
+	<div class="text">
+					<img src="images/LOGOSMALL.gif" width="200px" height="200" class="logo" alt="Green Train with writing around it saying melsa INC rockhampton"/> <!--Logo in the top left of the webpage-->
+				<div class="text"></div> <!--text next to the logo in the left o the webpage -->
+				<h1>Model Engineer And <br> Live Steamers Association <br> Rockhampton INC</h1>
+			</div>
+			<ul>
+				<li><a href="intex.html">Home</a></li>  <!--writing in the buttons at the top right of the webpage-->
+				<li><a href="Contacts.html">Contacts</a></li>
+				<li><a href="History.html">History</a></li>
+				<li><a href="bookings.html">Bookings</a></li><!--Writing on the buttins in the top right corner-->
+  </ul>
+			</div>
+<script>
+	var slideImg = document.getElementById("slideImg"); /* the java script that makes the image carasoul at the top of the page work */
+
+	var images = new Array(
+			"images/image 1.jpg",
+			"images/image 2.jpg",
+			"images/image 3.jpg",
+			"images/image 4.jpg",
+			"images/image 5.jpg",
+			"images/image 6.jpg",
+			"images/image 7.jpg",
+			"images/image 8.jpg"
+		);
+		
+	var len = images.length;
+	var i = 0;
+
+	function slider(){
+		if(i > len-1){
+			i = 0;
+		}
+		slideImg.src = images[i];
+		i++;
+		setTimeout('slider()',3000);
+	}
+		
+	</script>
+	</body>
+	</div>
+</html>

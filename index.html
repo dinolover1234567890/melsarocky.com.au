@@ -1,0 +1,144 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+
+<title>M.E.L.S.A Rockhampton INC</title> <!--page title-->
+
+	
+
+	
+
+<link  rel="stylesheet" href="style.css" type="text/css"> <!--CCS sytle sheet reference-->
+
+<style>
+
+	body {
+
+		background-color: #2D2D2D /* background colour for webpage if soming is not allready there */
+
+	}	
+
+	</style>
+
+	</head>
+	
+	
+
+		<body onLoad="slider()"> <!--to make the top banner image rolate-->
+
+
+			<div class="slider">  <!--to make the top banner image rolate-->
+
+			 <img src="images/background4.jpg" alt="tram" id="slideImg"> <!--to make the top banner image rolate-->
+
+			</div>
+
+<div class="navbar"> <!--navagation button in top right corner-->
+
+	<div class="text">
+
+					<img src="images/LOGOSMALL.gif" width="200px" height="200" class="logo" alt="Green Train with writing around it saying melsa INC rockhampton"/> <!--Logo in the top left of the webpage-->
+
+				<h1>Model Engineer And <br> Live Steamers Association <br> Rockhampton INC</h1>
+
+			</div>
+
+			<ul>
+
+				<li><a href="index.html">Home</a></li>  <!--writing in the buttons at the top right of the webpage-->
+
+				<li><a href="Contacts.html">Contacts</a></li>
+
+				<li><a href="History.html">History</a></li>
+
+				<li><a href="bookings.php">Bookings</a></li><!--Writing on the buttins in the top right corner-->
+
+  			</ul>
+			</div>
+			
+			<div id="sidebar">
+				<h3>Public Running Days: </h3>
+				<p>The first Sunday of every month</p>
+				<h3>Time: </h3>
+				<p>From: 9:00 AM to 12:00 PM</p>
+				<h3>Where: </h3>
+				<p>You can find us in Leichhardt Park on the corner of Campbell and Cambridge Street in Rockhampton</p>
+				<h3>Cost: </h3>
+				<p>$2 for three laps or $10 for unlimited rides</p>
+				<h3>Note: </h3>
+				<p>Fully enclosed footwear must be worn to ride the trains</p>
+				</div>
+			
+			<div id="content3">
+			<h1>Who are we</h1>
+			<p>We are a small club that meets on the first Sunday of every month providing the weather is fit for running. We operate mini trains for the public to ride. We currently have about 10 steam trains, 4 diesels and 3 electrics apart of our club, most of these trains can be seen regulary at our public running days on the first Sunday of every month from 9:00am till 12:00pm. Our club currently consists of about 25 members with more joining occasionally.</p>
+			<h1> Private Functions </h1>
+			<p> We do also offer a private function option, if you would like a private booking please make a booking request through our form on the bookings page. More information can also be found there. </p>
+			
+			</div>
+<script>	
+
+			
+
+	var slideImg = document.getElementById("slideImg"); /* the java script that makes the image carasoul at the top of the page work */
+
+
+
+	var images = new Array(
+
+			"images/image 1.jpg",
+
+			"images/image 2.jpg",
+
+			"images/image 3.jpg",
+
+			"images/image 4.jpg",
+
+			"images/image 5.jpg",
+
+			"images/image 6.jpg",
+
+			"images/image 7.jpg",
+
+			"images/image 8.jpg"
+
+		);
+
+		
+
+	var len = images.length;
+
+	var i = 0;
+
+
+
+	function slider(){
+
+		if(i > len-1){
+
+			i = 0;
+
+		}
+
+		slideImg.src = images[i];
+
+		i++;
+
+		setTimeout('slider()',3000);
+
+	}
+
+		
+
+	</script>
+	</body>
+</html>
+
